@@ -1,4 +1,4 @@
-name: NanoBind
+name: NanoBind2
 channels:
   - defaults
   - conda-forge
