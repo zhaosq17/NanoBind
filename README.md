@@ -35,7 +35,7 @@ To set up the environment, follow these steps:
 
 1. **Clone the repository**；
    ```bash
-   git clone https://github.com/zhaosq/NanoBind.git
+   git clone https://github.com/zhaosq17/NanoBind.git
    cd NanoBind
    ```
 2. **Create a new virtual environment** (optional but recommended):
