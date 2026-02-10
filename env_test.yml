@@ -20,10 +20,10 @@ dependencies:
     - --extra-index-url https://download.pytorch.org/whl/cu118
 
     - biopython==1.83
-    - certifi==2025.6.15
+    - certifi==2020.12.5
     - charset-normalizer==3.4.2
-    - filelock==3.18.0
-    - fsspec==2025.5.1
+    - filelock==3.0.12
+    - fsspec==0.9.0
     - hf-xet==1.1.5
     - huggingface-hub==0.33.2
     - idna==2.10
