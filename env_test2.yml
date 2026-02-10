@@ -1,0 +1,27 @@
+name: NanoBind2
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.8.8
+  - pip
+  - numpy
+  - pandas
+  - scikit-learn
+  - scipy
+  - pip:
+    - torch==2.1.0
+    - torchvision==0.16.0
+    - torchaudio==2.1.0
+    - --extra-index-url https://download.pytorch.org/whl/cu118
+
+    - transformers==4.27.4
+    - tokenizers==0.13.3
+    - pillow
+    - tqdm
+    - joblib
+    - packaging
+    - typing_extensions
+    - regex
+    - pyyaml
+    - python-dateutil
