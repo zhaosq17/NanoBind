@@ -145,6 +145,10 @@ if __name__ == '__main__':
     
     
     logfile = './output/log/log_' + model_name + add_name + '.txt'
+    import os
+    log_dir = os.path.dirname(logfile)
+    if not os.path.exists(log_dir):
+        os.makedirs(log_dir)
     fh = logging.FileHandler(logfile,mode='a')
     fh.setLevel(logging.DEBUG)
     ch = logging.StreamHandler()
