@@ -160,7 +160,7 @@ class NanoBind_pro(nn.Module):
         # Prompt
         BSite2 = self.Antigen_BSite_predictor(seq1,seq2,device)
         BSite2 = (BSite2.squeeze()>0.5)+0
-        BSite2_embedding = self.embeddingLayer(BSite2).unsqueeze(0)
+        BSite2_embedding = self.embeddingLayer(BSite2)
         BSite2_embedding = BSite2_embedding + self.positionalEncodings[:BSite2_embedding.shape[1],:]
         BSite2_embedding = BSite2_embedding.permute(1,0,2)
         BSite2_embedding = self.Prompt_encoder(BSite2_embedding)
