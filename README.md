@@ -72,9 +72,9 @@ python predict_affi.py --nb .\data\example\nb1.fasta --ag .\data\example\ag1.fas
 ### Applying the NanoBind framework for custom training
 
 ```bash
-python train_nai.py --Model 0 --finetune 1 --ESM2  esm2_t6_8M_UR50D &
-python train_nai.py --Model 1 --finetune 1 --ESM2 esm2_t6_8M_UR50D &
-python train_site.py --Model 0 --finetune 1 --ESM2  esm2_t6_8M_UR50D &
+python train_nai.py --Model 0 --finetune 1 --ESM2  esm2_t6_8M_UR50D
+python train_nai.py --Model 1 --finetune 1 --ESM2 esm2_t6_8M_UR50D
+python train_site.py --Model 0 --finetune 1 --ESM2  esm2_t6_8M_UR50D
 python train_pair.py
 ```
 
