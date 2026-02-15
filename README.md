@@ -38,7 +38,16 @@ To set up the environment, follow these steps:
    git clone https://github.com/zhaosq17/NanoBind.git
    cd NanoBind
    ```
-2. **Create a new virtual environment** (optional but recommended):
+2. **Install Git LFS and pull large model files** (some model files are stored with Git LFS due to size >100 MB):
+   ```bash
+   # Install Git LFS if not already installed
+   # On Ubuntu: sudo apt install git-lfs
+   # On macOS: brew install git-lfs
+   # On Windows: download from https://git-lfs.com/
+   git lfs install
+   git lfs pull
+    ```
+4. **Create a new virtual environment** (optional but recommended):
 
    ```bash
    conda env create -f NanoBind_env.yml
